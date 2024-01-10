@@ -3,11 +3,11 @@ const {json} = require('body-parser');
 const {bioData} = require("./types")
 const {editId} = require('./types')
 const {deleteBiodata} = require('./types')
-
+const cors = require('cors')
 
 const app = express();
 app.use(express.json())
-
+app.use(cors())
 let allhistory = []
 let StaffIdz = 0;
 
@@ -28,7 +28,7 @@ app.get('/tracker',function(req,res){
 
 app.post('/addStaff',function(req,res){
 
-   
+    let staff={}
     const validatedData = bioData.safeParse(req.body);
     if(validatedData.success){                              // checks if the inputs meet the requirements
     const { department, name, age, gender } = validatedData.data;

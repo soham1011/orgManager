@@ -1,0 +1,21 @@
+/* HighlightedBox.css */
+
+.highlighted-box {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffe600; /* Highlight color, you can change it */
+    border: 2px solid #ffab00; /* Border color, you can change it */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for a subtle effect */
+    margin: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  
+  .content {
+    margin-top: 10px;
+  }
+  
+  /* You can add more styles based on your design preferences */
+  
