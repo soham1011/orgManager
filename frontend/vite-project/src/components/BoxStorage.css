@@ -1,0 +1,21 @@
+/* BoxStorage.css */
+
+.box-container {
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.box-storage {
+    /* margin-left: 220px;  */
+    padding: 20px;
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  
+  
+  
+  
+  
